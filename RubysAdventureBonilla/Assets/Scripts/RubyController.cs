@@ -7,8 +7,7 @@ public class RubyController : MonoBehaviour
 
     void Start()
     {
-        QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = 10;
+        
     }
 
     void Update()
@@ -18,8 +17,8 @@ public class RubyController : MonoBehaviour
         
         Debug.Log(horizontal);
         Vector2 position = transform.position;
-        position.x = position.x + 0.01f * horizontal;
-        float vertical = Input.GetAxis("Vertical");
+        position.x = position.x + 4f * horizontal * Time.deltaTime;
+        position.y = position.y + 4f * vertical * Time.deltaTime;
         transform.position = position;
     }
 }
