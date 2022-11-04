@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RubyController : MonoBehaviour
 {
-
+    
     void Start()
     {
         
@@ -14,11 +14,10 @@ public class RubyController : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        
-        Debug.Log(horizontal);
+
         Vector2 position = transform.position;
-        position.x = position.x + 4f * horizontal * Time.deltaTime;
-        position.y = position.y + 4f * vertical * Time.deltaTime;
+        position.x = position.x + 3.0f * horizontal * Time.deltaTime;
+        position.y = position.y + 3.0f * vertical * Time.deltaTime;
         transform.position = position;
     }
 }
