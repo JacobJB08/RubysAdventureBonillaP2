@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2602166789510429368}
   - component: {fileID: 748622352769583389}
   - component: {fileID: 8341770763974113699}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ruby
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.017174363, y: 0.2675835}
@@ -149,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   maxHealth: 5
+  projectilePrefab: {fileID: 1226503939849994684, guid: afa114045ceb789469d426cad99a1e71, type: 3}
   timeInvincible: 2
 --- !u!95 &8341770763974113699
 Animator:
